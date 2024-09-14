@@ -5,6 +5,8 @@ Le dossier fiche_base contient une fiche contenant des base pour python donne pa
 
 Le fichier base python contient un resume rapide de ce que l'on a vu en cours 
 
+Le fichier bonne pratique contient quelque element de bonne pratique ainsi que certaine convention 
+
 Si vous souhaitez travailler de votre cote vous pouvez chercher des exercise python sur ce site : qkzk.xyz (sans correction)
 
 Si vous souhaitez travailler avec correction ce site peut etre utile : https://codex.forge.apps.education.fr/ 
