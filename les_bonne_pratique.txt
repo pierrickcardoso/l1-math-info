@@ -1,0 +1,46 @@
+Les bonne pratique en python ainsi que les conventions a respecter 
+Quand l'on doit réaliser une fonction , liste des etapes 
+numero 1 :
+Lire l'enonce attentivement
+repere les elt cle :
+	-donne d'entre du probleme 
+	-donne de sortie
+	-comportement
+numero 2:
+	-Ecrire la signature de la fonction avec un nom parlant sans oublier les indication de type ex pour la somme 
+  def somme(nombre_1:int,nombre_2:int)->int:
+
+numero 3:
+	-Ecrire la doc sans en faire un roman courte + exemple (test)
+Exemple avec l1 test 
+def somme(nombre_a,nombre,b):
+"""
+Calcule la somme du nombre_a + celui du nombre_b
+Preconditions : a et b positif 
+$$$ somme(2,3)
+5
+"""
+numero 4 :
+	-Ecrire le code
+Ex toujours avec la somme
+def somme(nombre_a,nombre,b):
+"""
+Calcule la somme du nombre_a + celui du nombre_b
+Preconditions : a et b positif 
+$$$ somme(2,3)
+5
+"""
+return nombre_a+nombre_b
+numero 5:
+	-Executer les test 
+numero 6:
+	-Si sa passe les test fini ou alors reusiner (reecrire le code de facon propre)
+	-Si sa plante on corrige soit le test qui plante soit le code 
+
+Convention python 
+Les constantes = les variable qui ne change pas sont note en majuscule 
+
+Bonne pratique 
+Ne pas nommer une variable global comme une variable local afin d'eviter toute confusion 
+Ecrire une documentation clair et des test utiles 
+Utiliser des noms parlant pour les variables 
