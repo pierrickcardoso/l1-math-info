@@ -41,6 +41,6 @@ Convention python
 Les constantes = les variable qui ne change pas sont note en majuscule 
 
 Bonne pratique 
-Ne pas nommer une variable global comme une variable local afin d'eviter toute confusion 
+Ne pas nommer une variable global comme une variable local afin d'eviter toute confusion , ainsi que des parametre d'une fonction 
 Ecrire une documentation clair et des test utiles 
 Utiliser des noms parlant pour les variables 
