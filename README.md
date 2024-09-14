@@ -7,7 +7,7 @@ Le fichier base python contient un resume rapide de ce que l'on a vu en cours
 
 Le fichier bonne pratique contient quelque element de bonne pratique ainsi que certaine convention 
 
-Si vous souhaitez travailler de votre cote vous pouvez chercher des exercise python [ici](qkzk.xyz) (sans correction)
+Si vous souhaitez travailler de votre cote vous pouvez chercher des exercise python [ici](https://qkzk.xyz/docs/) (sans correction)
 
 Si vous souhaitez travailler avec correction ce site peut etre utile ou [ici](https://codex.forge.apps.education.fr/)
 
