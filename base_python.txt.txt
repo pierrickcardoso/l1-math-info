@@ -1,0 +1,120 @@
+Les differents type (semaine 1):
+	-Les entier ( int) defini par les nombre entiers 1,2,3 etc
+	-Les flottants (float) defini par les nombre a virgule 3.2 , 4.5 , 2.6 (un flottant s'ecrit avec un point et non une virgule )
+	-Les chaines de caractere (str) definie entre "" ou ''
+Les differentes operation sur les type : 
+	-Les entier :
+		-La multiplication (+)
+		-La division normal (/)
+		-La division euclidienne (avce reste) (//)
+		-La puissance (**)
+		-Le reste de la dvision euclidienne (%)
+	-Les floats :
+		-Identique au entier 
+		Attention:
+			-une operation avec un floattant resultera toujours par un flottant 
+	-Les str :
+		-La concatenation (+) 
+		Ex "A"+"B"="AB"
+		- La multiplication (*)
+		Ex: "A"*4 = "AAAA"
+Les variable (semaine 1/2):
+	-Se definisse avec a droite une expression a evaluer et a gauche le nom de la variable
+	Ex : Nombre=3+2 ici Nombre est le nom de la variable a laquelle sera affecter 3+2 soit 5
+	-Peuvent etre global ( a tout le programme ) ou local a une fonction 
+	-Pour suivre l'evolution d'une variable on utilise unn tableau de memoire qui a chaque etape du programme donne la valeur de chaque variable 
+	Ex :
+	x=2
+	y=4
+	z=x+y
+	Le tableau de la memoire sera :
+Etape  1   2	3 
+	  X=2 X=2  X=2
+	  	  Y=4  Y=4
+	  		   Z=6
+Les fonctions (semaine 2):
+	-Une fonction est definie par le mot cle def , La syntaxe de la definition d'une fonctions est def nom_de_la_fonction(parametre):
+	-L'on peut definir le type d'un argument en ecrivant def ma_fonction(nombre:int):
+	-L'on peut aussi preciser la nature de ce quel renvoie def ma_fonction(nombre:int)->int:
+	-Ici la fonction prend en parametre un entier et en renvoie un autre 
+	-Lorsque que l'on ecrit une fonction l'on doit remplir la documentation 
+	-La documentation s'ecrit juste apres la definition de la fonction prenons une fonction qui calcul la somme de 2 entiers 
+	-Lorsque que l'on ecrit une fonction l'on doit indenter le code (c'est le decalage entre la ligne def est la doc ou le code )
+	-La fonction se termine le plus souvent par le mot cle return , dans le cas ou il n'y en a pas la fonction renvoie rien
+	def somme(x:int,y:int)->:
+		"""
+		Ici on ecrit la documentation 
+		Ce que la fonction fait les eventuelle preconditions (ex pas de nombre negatif) et enfin des test d'utilisation
+		La documentation de la fonction serait 
+		Renvoie la somme de 2 element entier passe en parametre sous forme d'entier 
+		Precondition : Aucune 
+		Exemple :
+		>>>somme(3,2)
+		5
+		Dans thonny l1 test les chevrons sont remplace par des dollars dans la documentation lors de sa completion automatique 
+		Cela est propre a thonny l1 test de maniere general l'on met des chevrons
+		"""
+		return x+y
+	-En python il existe des fonctions predefinis tel que :
+		-Len(element) renvoie la longueur d'une chaine de caracteres 
+		-abs(element) renvoie la valeur absolu d'un nombre passe en parametre 
+		-sqrt(element) du module math qui renvoie la racine carré du nombre passe en parametre 
+
+Semaine 3 Booléens 
+Un booleen en python est soit True ou False il existe que 2 valeurs 
+Un booleen s'obtient en verifiant une expression qui peut etre 
+A==B (l'egalite)
+A<B (b strictement superieur a A)
+A>B (A strictement superieur a B)
+A>=B ( A supeireur ou egal a B)
+A<=B ( B suepreiru ou egale a A)
+A!=B ( A est different de B)
+
+L'on peut utliser des operateur booleen qui sont les suivants :
+	-And (et) 
+	-Ex A and B (donc A et B sont vraie )
+	Table de verite de And 
+	Pour les table qui suit l'on va suppose que 1=True et 0 =False 
+	A   B    A and B
+	0	0		0
+	1   0       0
+	0	1       0
+	1   1       1
+	Le or (ou)
+	Ex A or B
+	Table de verite de or 
+	A   B    A or B
+	0	0		0
+	1   0		1
+	0   1       1
+	1   1       1
+	Ensuite il y a not 
+	ex Not a 
+	Table de verite de not 
+	A    Not a 
+	0     1
+	1     0
+Specifite de python 
+1<A<B sera evalue en python et renvera True si A est compris entre 1 et B 
+Cependant cela ne fonctionne qu'en python il vaut mieux donc favoriser de l'ecrire comme suis afin de ne pas se tromper
+dans d'autre language ou sa ne fonctionnerait pas :
+1<A and A<B
+Les differents operateur booleens on une priorite 
+And > Or > not 
+cela signifie que and sera effectuer avant or 
+Python fait ce que l'on appel des evalutaions paresseuse concretement si il peut deja predire le resultat 
+Avec la premiere valeur il ne va pas lire la deuxieme 
+Exemple:
+True or jzfnkjbegjk 
+Ici il va lire True et va donc renvoyer True sans meme lire la valeur a droite puisque pour or seul un True suffi pour qu'il renvoie True 
+rien or True 
+Ne vas pas fonctionner puisque rien n'est pas defini 
+Cela fonctionne aussi avec le and
+False and hfhdf 
+Va directement renvoye True puisque python ne va pas lire la valeur a droite comme avec and 
+si l'un est faux and est forcement faux 
+Une fonction qui renvoie un booleen se nomme un predicat 
+Il commence usuellemement par est_qqchose ou is_smtg (en anglais)
+Ex
+def est_paire(nombre:int)->bool: 
+Est un predicat qui indique si le nombre est pair 
