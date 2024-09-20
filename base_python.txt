@@ -60,3 +60,61 @@ Les fonctions (semaine 2):
 		-abs(element) renvoie la valeur absolu d'un nombre passe en parametre 
 		-sqrt(element) du module math qui renvoie la racine carré du nombre passe en parametre 
 
+Semaine 3 Booléens 
+Un booleen en python est soit True ou False il existe que 2 valeurs 
+Un booleen s'obtient en verifiant une expression qui peut etre 
+A==B (l'egalite)
+A<B (b strictement superieur a A)
+A>B (A strictement superieur a B)
+A>=B ( A supeireur ou egal a B)
+A<=B ( B suepreiru ou egale a A)
+A!=B ( A est different de B)
+
+L'on peut utliser des operateur booleen qui sont les suivants :
+	-And (et) 
+	-Ex A and B (donc A et B sont vraie )
+	Table de verite de And 
+	Pour les table qui suit l'on va suppose que 1=True et 0 =False 
+	A   B    A and B
+	0	0		0
+	1   0       0
+	0	1       0
+	1   1       1
+	Le or (ou)
+	Ex A or B
+	Table de verite de or 
+	A   B    A or B
+	0	0		0
+	1   0		1
+	0   1       1
+	1   1       1
+	Ensuite il y a not 
+	ex Not a 
+	Table de verite de not 
+	A    Not a 
+	0     1
+	1     0
+Specifite de python 
+1<A<B sera evalue en python et renvera True si A est compris entre 1 et B 
+Cependant cela ne fonctionne qu'en python il vaut mieux donc favoriser de l'ecrire comme suis afin de ne pas se tromper
+dans d'autre language ou sa ne fonctionnerait pas :
+1<A and A<B
+Les differents operateur booleens on une priorite 
+And > Or > not 
+cela signifie que and sera effectuer avant or 
+Python fait ce que l'on appel des evalutaions paresseuse concretement si il peut deja predire le resultat 
+Avec la premiere valeur il ne va pas lire la deuxieme 
+Exemple:
+True or jzfnkjbegjk 
+Ici il va lire True et va donc renvoyer True sans meme lire la valeur a droite puisque pour or seul un True suffi pour qu'il renvoie True 
+rien or True 
+Ne vas pas fonctionner puisque rien n'est pas defini 
+Cela fonctionne aussi avec le and
+False and hfhdf 
+Va directement renvoye True puisque python ne va pas lire la valeur a droite comme avec and 
+si l'un est faux and est forcement faux 
+Une fonction qui renvoie un booleen se nomme un predicat 
+Il commence usuellemement par est_qqchose ou is_smtg (en anglais)
+Ex
+def est_paire(nombre:int)->bool: 
+Est un predicat qui indique si le nombre est pair 
