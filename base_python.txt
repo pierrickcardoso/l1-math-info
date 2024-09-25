@@ -118,3 +118,53 @@ Il commence usuellemement par est_qqchose ou is_smtg (en anglais)
 Ex
 def est_paire(nombre:int)->bool: 
 Est un predicat qui indique si le nombre est pair 
+
+Semaine 4 Les conditions
+Les conditions en python 
+Il en existe 3 
+If 
+Elif
+Else
+dont voici les syntaxe 
+if conditions:
+	truc_a_faire
+elif conditions:
+	Truc_a_faire
+else:
+	Truc_a_faire 
+
+Un if fonctionne comme un si logique cad
+Si truc est machin alors je ferai sa 
+L'on suppora que les ligne suivantes sont dans le corp d'une fonction (sinon le return causerait une erreur de syntaxe )
+Ex 
+if x>=0:
+	return "positif"
+ici si x est positif alors on renvoie "positif"
+
+Un elif fonctionne comme un ou bien logique cad qu'il s'utilise apres un if et ne sera jamais executer , de plus si plusieurs elif sont mis a la suite seul le premier vraie sera evaluer les suivants seront ignore 
+Exemple :
+if x>=0:
+	return "positif"
+elif x<=0:
+	return "negatif"
+Ici si x est positif l'on le lira pas l'elif tandis que si il est negatif il lira le elif
+Ici 
+if x==0:
+	return "nul"
+elif x>0:
+	return "positif"
+elif x<0:
+	return "negatif"
+Ici si x est nul alors l'on lira que le premier if 
+Ici si x est positif l'on ne lira pas le dernier elif 
+
+Un else fonctionne comme un sinon 
+Exemple :
+if x>=0:
+	return "positif"
+else:
+	return "negatif"
+Si le if est vraie alors l'on ne lira pas le else 
+Sinon l'on executera que le else 
+
+Lorsque l'on a une focntion qui implique plusieurs cas il faut tous les tester lors des test
