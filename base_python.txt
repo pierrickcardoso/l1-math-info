@@ -41,6 +41,7 @@ Les fonctions (semaine 2):
 	-La documentation s'ecrit juste apres la definition de la fonction prenons une fonction qui calcul la somme de 2 entiers 
 	-Lorsque que l'on ecrit une fonction l'on doit indenter le code (c'est le decalage entre la ligne def est la doc ou le code )
 	-La fonction se termine le plus souvent par le mot cle return , dans le cas ou il n'y en a pas la fonction renvoie rien
+	Exemple :
 	def somme(x:int,y:int)->:
 		"""
 		Ici on ecrit la documentation 
