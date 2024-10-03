@@ -101,7 +101,7 @@ Cependant cela ne fonctionne qu'en python il vaut mieux donc favoriser de l'ecri
 dans d'autre language ou sa ne fonctionnerait pas :
 1<A and A<B
 Les differents operateur booleens on une priorite 
-And > Or > not 
+Not>and>or
 cela signifie que and sera effectuer avant or 
 Python fait ce que l'on appel des evalutaions paresseuse concretement si il peut deja predire le resultat 
 Avec la premiere valeur il ne va pas lire la deuxieme 
