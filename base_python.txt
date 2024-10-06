@@ -169,3 +169,12 @@ Si le if est vraie alors l'on ne lira pas le else
 Sinon l'on executera que le else 
 
 Lorsque l'on a une focntion qui implique plusieurs cas il faut tous les tester lors des test
+
+Semaine 5 
+Interaction avec l'utilisateur :
+Les print permette d'afficher qqchose dans la console la syntaxe est la suivante 
+print(truc_a_print) au format str 
+Input permet de recuperer des saisie clavier au format str la syntaxe est 
+input("Question a pose ou non(peut etre vide")
+Les fonctions qui utilise print se nomme affiche_truc
+Les fonctions de saisie se nomme saisie_truc
