@@ -1,0 +1,23 @@
+Liste de quelque erreurs que vous pouriez rencontrer :
+-Les SyntaxeError :
+  Celle ci arrive quand vous ne respectez pas la syntaxe d'un element python 
+  Elle sont diverse 
+  Quelque Exemple :
+  else x==1:
+  est une erreur else s'ecrit else:
+-Les IndentationsError arrive quand un bloc est mal indente 
+Ex 
+def somme(a,b):
+return a+b
+Ou encore 
+if x==0:
+return True 
+-Les NameError arrive quand un element n'est pas defini le plus osuvent il 'sagit d'une faute en réecrivant une variable
+b=2
+x=b+c
+Ici c n'est pas definie 
+-Les TypeErrors arrive quand une fonction ou un objet prend un parametre d'un mauvais type :
+  Exemple : 
+  a="30"
+  b=65"
+  c=a+b donnera une erreur puisque que l'on ne peut pas concatener un str et un int
