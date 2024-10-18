@@ -178,3 +178,32 @@ Input permet de recuperer des saisie clavier au format str la syntaxe est
 input("Question a pose ou non(peut etre vide")
 Les fonctions qui utilise print se nomme affiche_truc
 Les fonctions de saisie se nomme saisie_truc
+
+Semaine 6 Boucle for et iterable
+Un for sert a parcourirs les elements d'un iterable il s'ecrit
+for elem in truc:
+	truc_indenter
+Un iterable est une chaine de caracteres ou une liste 
+Semaine 7 iterable et boucle suite  
+L'on peut faire des boucles imbrique cad 
+for elem in truc1:
+	for machin in bidule:
+l'on se servira de cela uniquement pour effectuer des produits cartesiens actuellement
+
+Les elements d'un iterables sont indexe cad qu'il possede un indice on peut y acceder 
+l=[1,2,3,4,5,6]
+l[0] est 1
+L'on notera que le premier element d'un iterable possede l'indice 0
+L'on peut aussi definir des plage 
+l[0:1]
+renverra 
+[1,2]
+Ou encore rajouter un "pas"
+Exemple l[0:5:2]
+Renverra tout les element compris entre l'indice 0 et 5 avec un pas de deux 
+Donc 
+[1,3,5]
+
+L'on peut aussi parcourir l'iterable a l'envers avec un pas de -1
+Ou encore separe le premier element avec [1:]
+
