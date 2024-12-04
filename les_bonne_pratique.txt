@@ -40,6 +40,13 @@ numero 6:
 Convention python 
 Les constantes = les variable qui ne change pas sont note en majuscule 
 
+Bonne pratique nommage de variable 
+• i, j ou k (ou ind et indice en français) représentent des indices
+• c (ou car en français) représente un caractère
+• s (ou ch en français) représente une chaîne de caractères
+• l et lst (ou liste en français) représentent une liste
+• etc.
+
 Bonne pratique 
 Ne pas nommer une variable global comme une variable local afin d'eviter toute confusion , ainsi que des parametre d'une fonction 
 Ecrire une documentation clair et des test utiles 
