@@ -112,7 +112,7 @@ rien or True
 Ne vas pas fonctionner puisque rien n'est pas defini 
 Cela fonctionne aussi avec le and
 False and hfhdf 
-Va directement renvoye True puisque python ne va pas lire la valeur a droite comme avec and 
+Va directement renvoye False puisque python ne va pas lire la valeur a droite comme avec and 
 si l'un est faux and est forcement faux 
 Une fonction qui renvoie un booleen se nomme un predicat 
 Il commence usuellemement par est_qqchose ou is_smtg (en anglais)
