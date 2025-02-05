@@ -1,0 +1,37 @@
+Semaine 1:
+Les dictionnaire et ensemble 
+Un ensemble et defini par set(elem) avec un iterable a la place d'elem, l'on ne peut pas creer un ensemble vide 
+Un ensemble est une sorte de liste qui permet de stocker des donne unique l'on ne peut avoir 2 fois la meme valeur dans un ensemble 
+Les ensemble possede quelque metode:
+tel que add ou remove qui ajoute ou supprime un element et renvoie None donc modifie la variable 
+il y a aussi union, intersection renvoie l'union ou l'intersection de l'essemble a qui elle sont applique ex ens.union(un_autre_ensemble)
+et enfin les methode issubset, isdisjoint qui sont des predicat isbuset renvoie True si ens est compris dans autre ensemble 
+Isdisjoint renvoie True si les element sont disjoint (aucun elem en commun)
+enfin 
+ensemble.copy() creer une copie de l'element 
+Les dictionnaires:
+Un dictionnaire se definie comme suis 
+dict={}
+Dans un dictionnaire les donne sont stocke sous forme de paire keys:values les keys sdoivent etre unique 
+prennont comme exemple le dict suivant :
+>>>dict={'Jean':'050512112','Remy':'02245124534','anne':'1154354344'}
+les operations sur les dictionnaire sont les suivantes 
+'Jean' in dict = True
+>>>dict.keys()
+['Jean','Remy','anne']
+>>>dict.values()
+['050512112','02245124534','1154354344]
+>>>dict['Jean']
+'050512112'
+Enfin pour obtenir les paire l'on a 
+dict.items()
+[('Jean', '050512112'), ('Remy', '02245124534'), ('anne', '1154354344')]
+la methode dict.get(keys)
+Pour modifier une valeur l'on fait , supposons que Jean a change de numero 
+dict['Jean']='54545'
+Pour ajouter une valeur c pareil 
+dict['Ylan']='45445154'
+Pour supprimer une valeur l'on fait , supposons ici que l'on n'ai plus besoin du numero d'anne 
+del dict['anne']
+Semaine 2 Recursivité :
+
