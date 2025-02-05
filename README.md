@@ -3,7 +3,9 @@
 
 Le dossier fiche_base contient une fiche contenant des base pour python donne par mon prof de nsi en premiere 
 
-Le fichier base python contient un resume rapide de ce que l'on a vu en cours 
+Le fichier base python s1 contient un resume rapide de ce que l'on a vu en cours lors du S1
+
+Le fichier base python s2 est analogue a celui du s1 mais avec le contenue du s2
 
 Le fichier bonne pratique contient quelque element de bonne pratique ainsi que certaine convention 
 
