@@ -34,4 +34,46 @@ dict['Ylan']='45445154'
 Pour supprimer une valeur l'on fait , supposons ici que l'on n'ai plus besoin du numero d'anne 
 del dict['anne']
 Semaine 2 Recursivité :
+Un algorithme recursif est un type d'algorithme particulier 
+En effet il s'agit d'une fonction qui s'appele elle meme 
+Un alogrithme recursif a en general la forme qui suis 
+Def fonction_recursive(argument):
+  if qqchose: # ici c'est le cas de base
+    return 
+  else: # 
+  return fonction_recursive(argument_modifier) # est la l'appel recursif
+Pour faire simple le cas de base est le moment ou l'on connait la valeur pour un calcul notamment ou le moment ou l'on arrete les calcul 
+Ex
+def factorial(a):
+  if a==0:
+    return 1
+  else:
+    return a*factorial(a-1)
+Ex 
+def car_in_chaine(car,chaine):
+  if car==chaine[0]
+    return True
+  elif len(chaine)==1:
+    return False
+  else:
+    return car_in_chaine(car,chaine[1:])
+Ici le cas de base est le moment ou l'on a trouve l'element 
+Une fonction recursive possede un graphe d'appel recursif 
+Pour faire simple tant que l'on atteint pas le cas de base les appel reste en attente 
+ex fac(3)
 
+fac(3) = 2*3
+ |  | 2
+fact(2) 1*2=2
+ |  | 1
+fact(1) = 1*1
+ |  | 1
+fact(0) =0
+Cela represente approximativement le graffe de l'appel recursif de fac(3) qui reprensete factorielle 
+https://qkzk.xyz/docs/nsi/cours_terminale/prog/recursivite/cours/#ordre-des-appels-r%c3%a9cursifs 
+Vous trouver un graphe plus explicite ici 
+Il existe 2 type de recursivite :
+simple ou lineaire c'est quand la fonction effectue un seul appel (ex factorial)
+Et les algo terminaux 
+Il est dit terminal si la valeur renvoye et celle de l'appel 
+Ma version de factorielle n'est pas terminal puisqu'on multiplie la valeur de l'appel par a
