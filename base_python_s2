@@ -42,7 +42,8 @@ Def fonction_recursive(argument):
     return 
   else: # 
   return fonction_recursive(argument_modifier) # est la l'appel recursif
-Pour faire simple le cas de base est le moment ou l'on connait la valeur pour un calcul notamment ou le moment ou l'on arrete les calcul 
+Pour faire simple le cas de base est le moment ou l'on connait la valeur pour un calcul notamment ou le moment ou l'on arrete les calcul ;
+De maniere general il s'agit du cas le plus simple 
 Ex
 def factorial(a):
   if a==0:
@@ -77,3 +78,55 @@ simple ou lineaire c'est quand la fonction effectue un seul appel (ex factorial)
 Et les algo terminaux 
 Il est dit terminal si la valeur renvoye et celle de l'appel 
 Ma version de factorielle n'est pas terminal puisqu'on multiplie la valeur de l'appel par a
+Un algo recursif est dit multiple si il se resout via plusieur appel different 
+Les algo recursif peuvent se croiser ex avec une fonction pair ou impair 
+def pair(nb):
+  if nb==0:
+    return True
+  else:
+    return impair(n-1)
+def impair(nb):
+  if nb==0:
+    return False
+  else:
+    return pair(n-1)
+Semaine 3 La POO (Programmation orienté objet ou classe):
+La POO sert notamment a crée son propre type :
+Un type se compose de 2 element differents :
+Les attribut qui sont les variable lui etant propre 
+Et les methode qui sont les fonction lui etant propre 
+Une class se definit avec le mot cle Class
+Toute fonction ou attribut doit commencer par le mot self qui renvoie a l'objet lui meme (la variable qui stock un peu plus bas il s'agit de a)
+Ex
+class class:
+
+Les classe possede quelque methode implanter de base caracterise par __ avant et apres le nom 
+La plus courante est le __init__ qui sera appele quand l'on "cree" l'objet 
+Ex a=ma_classe()
+Lorsque que l'on crée une instance de la classe l'on renseigne les parametre du init a l'exception du self ,
+Une methode ou un attribut d'une classe s'obtient avec 
+Variable.methode() , variable.atribut()
+Voici la liste des methode comprise de base dans python 
+__init__ permet de crée l'objet 
+
+__repr__ représentation dans >>> z l'interpréteur, 
+
+__str__ représentation en chaine de str(z) ou print(z) caractères,
+
+__add__ ajout de deux objets, z1 + z2
+
+__mul__ multiplication de deux objets z1 * z2
+
+__neg__ opposé d'un objet -z
+
+__sub__ différence de deux objets z1 - z2
+
+__eq__ égalité de deux objets z1 == z2
+
+__le__ inégalité large a \<= b
+
+__lt__ inégalité stricte a \< b
+
+__ge__ inégalité large a >= b
+
+__gt__ inégalité stricte a > b
